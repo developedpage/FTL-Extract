@@ -145,6 +145,7 @@ class I18nMatcher(ast.NodeVisitor):
             print(node.args[0].keywords)
             print(node.args[0].func)
             print(node.args[0].args)
+            print(node.args[0].func.id)
             if not node.args:
                 return
 
