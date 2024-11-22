@@ -9,5 +9,4 @@ if TYPE_CHECKING:
 
 
 def comment_ftl_key(key: FluentKey, serializer: FluentSerializer) -> None:
-    raw_entry = serializer.serialize_entry(key.translation)
-    key.translation = ast.Comment(content=raw_entry.strip())
+    pass
