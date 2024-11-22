@@ -101,6 +101,7 @@ class I18nMatcher(ast.NodeVisitor):
             if isinstance(attr, ast.Name) and attr.id in self.func_names:
                 if len(attrs) == 1 and attrs[0] == GET_LITERAL:
                     # Check if the call has args
+                    print(node.args)
                     if not node.args:
                         return  # Skip if no args
 
