@@ -142,6 +142,7 @@ class I18nMatcher(ast.NodeVisitor):
 
         elif isinstance(node.func, ast.Name) and node.func.id in self.func_names:
             print(node.args)
+            print(node.args[0].keywords)
             if not node.args:
                 return
 
